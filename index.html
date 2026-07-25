@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#09070d" />
+    <title>霍格沃茨密室逃脱 3D</title>
+    <script type="module" crossorigin src="/Hogwarts-Escape-Room-3D-Play/assets/index-DDaPn-Ak.js"></script>
+    <link rel="stylesheet" crossorigin href="/Hogwarts-Escape-Room-3D-Play/assets/index-DncA1Hy2.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="hud">
+      <div class="brand">HOGWARTS <span>ESCAPE ROOM</span></div>
+      <div id="objective">目标：寻找三枚魔法符文，打开密室之门</div>
+      <div id="counter">符文 0 / 3</div>
+      <div id="prompt"></div>
+      <div class="crosshair">＋</div>
+    </div>
+    <div id="start-screen">
+      <div class="panel">
+        <p class="eyebrow">A 3D FAN EXPERIENCE</p>
+        <h1>霍格沃茨<br /><span>密室逃脱</span></h1>
+        <p>探索被封印的魔法教室，收集三枚符文并逃出去。</p>
+        <button id="start-button">进入密室</button>
+        <small class="desktop-help">WASD 移动 · 鼠标观察 · E 互动 · ESC 释放鼠标</small>
+        <small class="mobile-help">左侧摇杆移动 · 右半屏滑动观察 · 点击“互动”操作</small>
+      </div>
+    </div>
+    <div id="mobile-controls" aria-label="手机触控操作">
+      <div id="joystick"><div id="joystick-knob"></div></div>
+      <button id="interact-button">互动</button>
+    </div>
+    <div id="message"></div>
+  </body>
+</html>
