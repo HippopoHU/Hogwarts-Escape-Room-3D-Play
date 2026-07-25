@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#09070d" />
     <title>霍格沃茨密室逃脱 3D</title>
-    <script type="module" crossorigin src="/Hogwarts-Escape-Room-3D-Play/assets/index-C6Jvd_1B.js"></script>
-    <link rel="stylesheet" crossorigin href="/Hogwarts-Escape-Room-3D-Play/assets/index-CxRHF3QK.css">
+    <script type="module" crossorigin src="/Hogwarts-Escape-Room-3D-Play/assets/index-XsH8d981.js"></script>
+    <link rel="stylesheet" crossorigin href="/Hogwarts-Escape-Room-3D-Play/assets/index-7ACPRggg.css">
   </head>
   <body>
     <div id="app"></div>
@@ -21,12 +21,34 @@
       <div class="panel">
         <p class="eyebrow">A 3D FAN EXPERIENCE</p>
         <h1>霍格沃茨<br /><span>密室逃脱</span></h1>
-        <p>探索被封印的魔法教室，收集三枚符文并逃出去。</p>
-        <button id="start-button">进入密室</button>
+        <p>横跨 7 部曲、28 章与 112 套密室关卡，从第一封猫头鹰来信走到霍格沃茨最终决战。</p>
+        <div class="start-actions">
+          <button id="start-button">进入第一关</button>
+          <button id="campaign-button" class="secondary-button">七部曲地图</button>
+        </div>
         <small class="desktop-help">WASD 移动 · 鼠标观察 · E 互动 · ESC 释放鼠标</small>
         <small class="mobile-help">左侧摇杆移动 · 右半屏滑动观察 · 点击“互动”操作</small>
       </div>
     </div>
+    <section id="campaign-screen" class="campaign-screen hidden" aria-label="七部曲关卡地图">
+      <header class="campaign-header">
+        <div>
+          <p class="eyebrow">THE SEVEN-BOOK JOURNEY</p>
+          <h2>七部曲密室地图</h2>
+          <p id="campaign-stats">7 部曲 · 28 章 · 112 关</p>
+        </div>
+        <button id="campaign-close" type="button" aria-label="关闭地图">×</button>
+      </header>
+      <nav id="book-tabs" class="book-tabs" aria-label="选择部曲"></nav>
+      <div class="campaign-book-intro">
+        <div>
+          <p id="campaign-book-title"></p>
+          <h3 id="campaign-book-subtitle"></h3>
+        </div>
+        <p id="campaign-theme"></p>
+      </div>
+      <div id="chapter-grid" class="chapter-grid"></div>
+    </section>
     <div id="mobile-controls" aria-label="手机触控操作">
       <div id="look-zone" aria-label="滑动转向"><span>滑动转向</span></div>
       <div id="joystick"><div id="joystick-knob"></div></div>
