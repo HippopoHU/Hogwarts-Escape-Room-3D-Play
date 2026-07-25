@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#09070d" />
     <title>霍格沃茨密室逃脱 3D</title>
-    <script type="module" crossorigin src="/Hogwarts-Escape-Room-3D-Play/assets/index-XsH8d981.js"></script>
-    <link rel="stylesheet" crossorigin href="/Hogwarts-Escape-Room-3D-Play/assets/index-7ACPRggg.css">
+    <script type="module" crossorigin src="/Hogwarts-Escape-Room-3D-Play/assets/index-DqHDs4i6.js"></script>
+    <link rel="stylesheet" crossorigin href="/Hogwarts-Escape-Room-3D-Play/assets/index-Dru5TDlK.css">
   </head>
   <body>
     <div id="app"></div>
@@ -16,6 +16,12 @@
       <div id="counter">符文 0 / 3</div>
       <div id="prompt"></div>
       <div class="crosshair">＋</div>
+      <aside id="puzzle-panel">
+        <span id="room-kicker">第一部 · 第一章 · 第 1 关</span>
+        <strong id="room-name">猫头鹰来信</strong>
+        <p id="puzzle-hint">按弗农逃亡的时间顺序找到四封地址不断变化的信。</p>
+        <div id="puzzle-progress">○ ○ ○ ○</div>
+      </aside>
     </div>
     <div id="start-screen">
       <div class="panel">
@@ -55,5 +61,9 @@
       <button id="interact-button">互动</button>
     </div>
     <div id="message"></div>
+    <div id="room-transition" class="hidden" aria-live="polite">
+      <span id="transition-kicker">下一关</span>
+      <strong id="transition-title">对角巷清单</strong>
+    </div>
   </body>
 </html>
