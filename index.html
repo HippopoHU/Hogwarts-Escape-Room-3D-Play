@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#09070d" />
     <title>霍格沃茨密室逃脱 3D</title>
-    <script type="module" crossorigin src="/Hogwarts-Escape-Room-3D-Play/assets/index-O4EXtjeG.js"></script>
-    <link rel="stylesheet" crossorigin href="/Hogwarts-Escape-Room-3D-Play/assets/index-OMmXDoNp.css">
+    <script type="module" crossorigin src="/Hogwarts-Escape-Room-3D-Play/assets/index-DfHAPl-t.js"></script>
+    <link rel="stylesheet" crossorigin href="/Hogwarts-Escape-Room-3D-Play/assets/index-qcFdjWhy.css">
   </head>
   <body>
     <div id="app"></div>
@@ -47,6 +47,12 @@
           <button id="campaign-button" class="secondary-button">七部曲地图</button>
         </div>
         <button id="language-button" class="language-change-button" type="button">🌐 中文</button>
+        <div class="narration-controls">
+          <button id="narration-button" class="narration-button" type="button" aria-controls="narration-audio">▶ 播放中文旁白</button>
+          <span id="narration-status" aria-live="polite">按下后播放，不会自动播放</span>
+        </div>
+        <p id="narration-subtitle" class="narration-subtitle">欢迎来到霍格沃茨。猫头鹰送来的四封信，藏着逃离密室的正确顺序。请观察地址变化，准备好后开始探索。</p>
+        <audio id="narration-audio" preload="none"></audio>
         <small class="desktop-help">WASD 移动 · 鼠标观察 · E 互动 · ESC 释放鼠标</small>
         <small class="mobile-help">左侧摇杆移动 · 右半屏滑动观察 · 点击“互动”操作</small>
       </div>
