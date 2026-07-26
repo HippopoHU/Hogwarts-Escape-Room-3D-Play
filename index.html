@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#09070d" />
     <title>霍格沃茨密室逃脱 3D</title>
-    <script type="module" crossorigin src="/Hogwarts-Escape-Room-3D-Play/assets/index-C6tM79UP.js"></script>
-    <link rel="stylesheet" crossorigin href="/Hogwarts-Escape-Room-3D-Play/assets/index-6kxEaKE4.css">
+    <script type="module" crossorigin src="/Hogwarts-Escape-Room-3D-Play/assets/index-s1zSahEY.js"></script>
+    <link rel="stylesheet" crossorigin href="/Hogwarts-Escape-Room-3D-Play/assets/index-DmMXPqvP.css">
   </head>
   <body>
     <div id="app"></div>
@@ -23,17 +23,30 @@
         <div id="puzzle-progress">○ ○ ○ ○</div>
       </aside>
     </div>
+    <div id="language-screen" role="dialog" aria-modal="true" aria-labelledby="language-title">
+      <div class="language-panel">
+        <p class="eyebrow">CHOOSE YOUR LANGUAGE</p>
+        <h2 id="language-title">选择语言 · Choose · Choisir</h2>
+        <p class="language-subtitle">请选择游戏语言 / Select your language / Choisissez votre langue</p>
+        <div class="language-options">
+          <button type="button" data-language="zh-CN"><span>中文</span><small>简体中文</small></button>
+          <button type="button" data-language="en"><span>English</span><small>English</small></button>
+          <button type="button" data-language="fr"><span>Français</span><small>Français</small></button>
+        </div>
+      </div>
+    </div>
     <div id="start-screen">
       <div class="panel">
         <p class="eyebrow">A 3D FAN EXPERIENCE</p>
-        <h1>霍格沃茨<br /><span>密室逃脱</span></h1>
-        <p>横跨 7 部曲、28 章与 112 套密室关卡，从第一封猫头鹰来信走到霍格沃茨最终决战。</p>
+        <h1><span id="start-brand">霍格沃茨</span><br /><span id="start-title">密室逃脱</span></h1>
+        <p id="start-description">横跨 7 部曲、28 章与 112 套密室关卡，从第一封猫头鹰来信走到霍格沃茨最终决战。</p>
         <div class="start-actions">
           <button id="start-button">进入第一关</button>
           <button id="continue-button" class="secondary-button hidden">继续游戏</button>
           <button id="restart-button" class="secondary-button danger-button hidden">重新开始</button>
           <button id="campaign-button" class="secondary-button">七部曲地图</button>
         </div>
+        <button id="language-button" class="language-change-button" type="button">🌐 中文</button>
         <small class="desktop-help">WASD 移动 · 鼠标观察 · E 互动 · ESC 释放鼠标</small>
         <small class="mobile-help">左侧摇杆移动 · 右半屏滑动观察 · 点击“互动”操作</small>
       </div>
